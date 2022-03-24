@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --primary-color:#1771d1;
+    --secondary-color:#0a1a29;
+    --dark-color:#030c14;
+    --light-color:rgb(238, 238, 238);
+
+
+}
+.main-container{
+height: 100vh;
+background: var(--primary-color) no-repeat fixed center;
+padding-top: 50px;
+}
+.container{
+    max-width: 380px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    height: 650px ;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    display:block;
+    padding: 20px;
+    box-shadow: 5px 5px 10px var(--dark-color);
+    
+    
+}
+.image-hover{
+    width: 100%;
+    border-radius: 10px;
+    height:60%;
+    transition: 0.2s;
+}
+.image-hover img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.2s;
+}
+.image-hover:hover{
+    background-image: url('./images/icon-view.svg');
+    background-position: center;
+    background-color: rgb(1, 255, 255);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 100%;    
+    opacity: 0.5;
+}
+
+.container h1{
+    font-size: 2em;
+    margin: 10px 0 ;
+}
+.container p{
+    font-size:1.2em;
+    margin: 10px 0;
+}
+.container h1:hover{
+    transition: 1.3s ease-in-out;
+    color: aqua;
+    margin: 10px 0;
+}
+.eth-clock{
+    width: auto;
+    height: 20px;
+    font-size: 1.4em;
+    margin: 20px 0 20px 0   ;
+    display: flex;   
+    align-items: center ;
+    justify-content:space-between;
+}
+.eth-clock > *:nth-child(2){
+    margin-right : 70px;
+}
+.eth-clock > *:nth-child(1){
+    margin-right : 10px;
+}
+.eth-clock > *:nth-child(3){
+    margin-right : 10px;
+    
+}
+.eth-clock > *:nth-child(4){
+    opacity: 0.5; 
+}
+.eth-clock img{
+    height: 100%;
+    width: auto;
+    
+   
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+}
+.profile{
+    font-size: 1.4em;
+   margin-top:25px;
+}
+.profile img{
+    width: 55px;
+    height: 50px;
+}
+.profile *:first-child{
+    margin-right: 10px;
+    width: 30px;
+}
+.profile strong:hover{
+    color: aqua;
+    font-weight: 300;
+    transition: 1.3s ease-in-out;
+}
+.attribution{
+    text-align: center;
+    margin-top: 50px;
+}
+.attribution a{
+    color: var(--light-color);
+  
+}
+@media(max-width:500px)  {
+    .main-container{
+        background-color: white;
+        width:100vw;
+
+
+    }
+    .container{
+        width:380px;
+        margin: auto;
+    }
+}
